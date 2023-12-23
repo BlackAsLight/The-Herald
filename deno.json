@@ -1,0 +1,16 @@
+{
+	"tasks": {
+		"build": "deno run -A bundle.ts",
+		"check": "deno cache --lock-write bundle.ts static/ts/main.ts && deno check bundle.ts static/ts/main.ts"
+	},
+	"compilerOptions": {
+		"lib": [
+			"dom",
+			"deno.ns"
+		]
+	},
+	"imports": {
+		"@std/": "https://deno.land/std@0.210.0/",
+		"@x/": "https://deno.land/x/"
+	}
+}

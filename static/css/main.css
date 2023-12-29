@@ -1,0 +1,86 @@
+:root {
+	--accent: #EB6F24;
+	--primary: #252525;
+	--secondary: #F4F4F4;
+	--ternary: #FFFFFF;
+}
+
+html,
+body,
+p {
+	margin: 0;
+}
+
+body {
+	background: var(--secondary);
+	color: var(--primary);
+}
+
+[href] {
+	color: var(--accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 1rem;
+	margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	background: var(--accent);
+	color: var(--primary);
+}
+
+h1 {
+	text-align: center;
+	background: var(--primary);
+	color: var(--accent);
+	border-radius: 0 0 1rem 1rem;
+}
+
+h1+p {
+	border-radius: 0 0 1rem 1rem;
+}
+
+h2 {
+	border-radius: 0.5rem 0.5rem 0 0;
+	margin: 0 1rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 1rem;
+}
+
+p {
+	padding: 1rem;
+}
+
+ol,
+ul {
+	padding: 1rem 2rem;
+}
+
+p,
+ol,
+ul {
+	margin-inline: 1rem;
+	background: var(--ternary);
+}
+
+h2+p,
+h2+ol,
+h2+ul {
+	margin-top: 0;
+}
